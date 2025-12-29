@@ -6,7 +6,7 @@
   text-align: center;
   padding: 6rem 2rem;
   color: white;
-  padding-top: 180px;
+  padding-top: 200px;
 }
 
 .heroContent {
@@ -106,7 +106,7 @@
 
 .avatarReveal {
   position: absolute;
-  top: -15.5%;
+  top: -20%;
   left: -10%;
   width: 120%;
   height: 120%;
@@ -127,7 +127,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 160px;
+    padding-top: 180px;
   }
 
   .heroContent {
@@ -146,11 +146,15 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding-top: 150px;
+    padding-top: 170px;
   }
 
   .avatarContainer {
     width: 240px;
     height: 240px;
+  }
+
+  .avatarReveal {
+    top: -25%;
   }
 }
