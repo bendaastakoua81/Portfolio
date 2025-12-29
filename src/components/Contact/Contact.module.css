@@ -1,6 +1,6 @@
 .contact {
   padding: 6rem 2rem;
-  padding-top: 120px;
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,11 +18,11 @@
 
 .contactCard {
   background: rgba(30, 30, 60, 0.8);
-  padding: 2.5rem;
+  padding: 3rem;
   border-radius: 20px;
   border: 1px solid #646cff44;
   backdrop-filter: blur(10px);
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
   transition: transform 0.4s ease;
   text-align: center;
@@ -39,26 +39,26 @@
 }
 
 .formGroup {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
   text-align: left;
 }
 
 .formGroup label {
   display: block;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
   color: #ccc;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .formGroup input,
 .formGroup textarea {
   width: 100%;
-  padding: 0.9rem;
+  padding: 1.1rem;
   background: rgba(100, 108, 255, 0.1);
   border: 1px solid #646cff44;
   border-radius: 12px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -70,21 +70,21 @@
 }
 
 .formGroup textarea {
-  min-height: 120px;
+  min-height: 160px;
   resize: vertical;
 }
 
 .submitBtn {
   width: 100%;
-  padding: 0.9rem;
+  padding: 1.2rem;
   background: #646cff;
   color: white;
   border: none;
   border-radius: 12px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  margin: 1.2rem 0;
+  margin: 1.5rem 0;
   transition: all 0.3s ease;
 }
 
@@ -95,13 +95,13 @@
 }
 
 .contactLinks {
-  margin-top: 0.8rem;
-  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   color: #ccc;
 }
 
 .contactLinks p {
-  margin: 0.6rem 0;
+  margin: 0.8rem 0;
 }
 
 .contactLinks a {
@@ -118,10 +118,17 @@
 
 @media (max-width: 768px) {
   .contactCard {
-    padding: 2rem;
-    max-width: 400px;
+    padding: 2.5rem;
+    max-width: 550px;
   }
   .contact h2 {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactCard {
+    padding: 2rem;
+    max-width: 400px;
   }
 }
