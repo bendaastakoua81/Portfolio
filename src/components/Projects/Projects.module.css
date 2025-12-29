@@ -1,0 +1,114 @@
+.projects {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: white;
+  overflow: hidden;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  color: #646cff;
+  text-align: center;
+}
+
+.carouselWrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  cursor: grab;
+  user-select: none;
+  scrollbar-width: none;
+}
+
+.carouselWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselWrapper:active {
+  cursor: grabbing;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem 0;
+  width: max-content;
+}
+
+.card {
+  flex: 0 0 380px;
+  background: rgba(30, 30, 60, 0.8);
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #646cff44;
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  color: #646cff;
+  border: 2px solid #646cff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.card a:hover {
+  background: #646cff;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 340px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 300px;
+    height: 360px;
+  }
+  .carouselTrack {
+    gap: 2rem;
+  }
+  .projects {
+    padding: 6rem 1rem;
+  }
+}
