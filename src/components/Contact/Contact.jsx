@@ -126,7 +126,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/bendaastakoua81
+              bendaastakoua81
             </a>
           </p>
         </div>
