@@ -4,7 +4,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/",
-  optimizeDeps: {
-    exclude: ["@emailjs/browser"],
+  build: {
+    rollupOptions: {
+      external: ["@emailjs/browser"],
+    },
   },
 });
