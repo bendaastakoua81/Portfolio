@@ -5,10 +5,12 @@ import Skills from "./components/Skills/Skills.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import GlowParticles from "./components/GlowParticles.jsx";
 import useScrollSnap from "./useScrollSnap";
+import useNavbarScroll from "./useNavbarScroll";
 import "./App.css";
 
 function App() {
   useScrollSnap();
+  useNavbarScroll();
 
   return (
     <>
