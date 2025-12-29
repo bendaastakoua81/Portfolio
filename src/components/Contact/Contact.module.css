@@ -117,18 +117,73 @@
 }
 
 @media (max-width: 768px) {
-  .contactCard {
-    padding: 2.5rem;
-    max-width: 550px;
+  .contact {
+    padding: 6rem 1.5rem;
   }
+
+  .contactCard {
+    padding: 2.8rem;
+    max-width: 580px;
+  }
+
   .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .formGroup textarea {
+    min-height: 180px;
+  }
+
+  .submitBtn {
+    padding: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
+  .contact {
+    padding: 5rem 1rem;
+  }
+
   .contactCard {
-    padding: 2rem;
-    max-width: 400px;
+    padding: 2.2rem;
+    max-width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 2.4rem;
+  }
+
+  .formGroup {
+    margin-bottom: 1.6rem;
+  }
+
+  .formGroup label {
+    font-size: 1rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .formGroup textarea {
+    min-height: 160px;
+  }
+
+  .submitBtn {
+    padding: 1.1rem;
+    font-size: 1.1rem;
+  }
+
+  .contactLinks {
+    font-size: 1.1rem;
   }
 }
