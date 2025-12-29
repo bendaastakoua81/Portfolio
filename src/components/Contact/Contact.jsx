@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 
 function Contact() {
@@ -15,27 +14,39 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
-    emailjs
-      .send(
-        "service_8zba81d", // Your Service ID
-        "template_tvoxxye", // Your Template ID
-        formData,
-        "p-5CqOMpD_cU6Ixpb" // Your Public Key (User ID)
-      )
-      .then(
-        () => {
-          setStatus("Message sent successfully! 🎉");
-          setFormData({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setStatus("Failed to send. Please try again.");
-          console.error("EmailJS error:", error);
-        }
-      );
+    try {
+      if (!window.emailjs) {
+        const script = document.createElement("script");
+        script.src =
+          "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+        script.async = true;
+        document.body.appendChild(script);
+        await new Promise((resolve) => {
+          script.onload = resolve;
+        });
+      }
+
+      if (!window.emailjs.initialized) {
+        window.emailjs.init("p-5CqOMpD_cU6Ixpb");
+        window.emailjs.initialized = true;
+      }
+
+      await window.emailjs.send("service_8zba81d", "template_tvoxxye", {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      });
+
+      setStatus("Message sent successfully! 🎉");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      setStatus("Failed to send. Please try again.");
+      console.error("EmailJS error:", error);
+    }
   };
 
   return (
@@ -104,18 +115,16 @@ function Contact() {
         <div className={styles.contactLinks}>
           <p>
             Email:{" "}
-            <a href="mailto:bendaastakoua77@email.com">
-              bendaastakoua77@email.com
-            </a>
+            <a href="mailto:takouaBendaas@email.com">takouaBendaas@email.com</a>
           </p>
           <p>
             GitHub:
             <a
-              href="https://github.com/bendaastakoua81"
+              href="https://github.com/takoua"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/bendaastakoua81
+              github.com/takoua
             </a>
           </p>
         </div>
