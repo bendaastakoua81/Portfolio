@@ -6,7 +6,7 @@
   text-align: center;
   padding: 6rem 2rem;
   color: white;
-  padding-top: 140px;
+  padding-top: 180px;
 }
 
 .heroContent {
@@ -127,7 +127,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding-top: 120px;
+    padding-top: 160px;
   }
 
   .heroContent {
@@ -146,7 +146,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding-top: 110px;
+    padding-top: 150px;
   }
 
   .avatarContainer {

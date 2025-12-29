@@ -115,16 +115,18 @@ function Contact() {
         <div className={styles.contactLinks}>
           <p>
             Email:{" "}
-            <a href="mailto:takouaBendaas@email.com">takouaBendaas@email.com</a>
+            <a href="mailto:bendaastakoua77@email.com">
+              bendaastakoua77@email.com
+            </a>
           </p>
           <p>
             GitHub:
             <a
-              href="https://github.com/takoua"
+              href="https://github.com/bendaastakoua81"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/takoua
+              github.com/bendaastakoua81
             </a>
           </p>
         </div>
