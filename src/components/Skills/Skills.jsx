@@ -15,7 +15,7 @@ const skillCategories = [
   {
     name: "React",
     front: "Used in labs - Components & Hooks",
-    back: "State management, routing, performance optimization",
+    back: "State management (useState, useReducer, Context), performance optimization, and building interactive UIs",
   },
   {
     name: "AI & Machine Learning",
