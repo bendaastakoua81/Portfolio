@@ -9,8 +9,8 @@ const skillCategories = [
   },
   {
     name: "JavaScript",
-    front: "Decent level - ES6+ & DOM manipulation",
-    back: "Async/await, APIs, event handling, modern syntax",
+    front: "Decent level - Interactive frontend logic",
+    back: "APIs, event handling, modern syntax",
   },
   {
     name: "React",
